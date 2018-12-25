@@ -1,5 +1,13 @@
 class EmailParser
 
+  attr_accessor :email
+
+  @@addresses = []
+
+  def initialize(emails)
+      @@addresses << emails.split(",")
+      @@addresses
+  end
 
 
 end
