@@ -4,13 +4,13 @@ class EmailParser
 
   @@addresses = []
 
-  def initialize(emails)
-      @@addresses << emails.split(",")
-      @@addresses
+  def initialize
   end
 
   def self.parse(emails)
-
+    @@addresses << emails.split(",")
+    @@addresses
+  end
 
 end
 
