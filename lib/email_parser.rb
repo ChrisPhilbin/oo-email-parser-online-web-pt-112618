@@ -4,7 +4,8 @@ class EmailParser
 
   @@addresses = []
 
-  def initialize
+  def initialize(emails)
+    self.parse(emails)
   end
 
   def self.parse(emails)
